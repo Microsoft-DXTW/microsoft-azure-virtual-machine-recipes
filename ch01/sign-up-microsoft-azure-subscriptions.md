@@ -1,4 +1,4 @@
-[](https://bizspark.microsoft.com/)# 取得 Microsoft Azure 訂用帳戶（Subscription）
+# 取得 Microsoft Azure 訂用帳戶（Subscription）
 
 在 [Microsoft Azure](https://azure.microsoft.com/zh-tw/) 上建立任何服務及資源時都要指定一個**訂用帳戶**（subscription），用意在於要將該服務或資源的費用累積在哪裡，一個 [Microsoft 帳號](https://www.microsoft.com/zh-tw/account)可以註冊（或是被指派）多個 Microsoft Azure 訂用帳戶，每個訂用帳戶互相獨立，可以有各自的帳單以及付費方式。
 
@@ -36,10 +36,10 @@
 
 ## 常見問題
 
-* Q: 註冊 Microsoft Azure 訂用帳戶時要綁信用卡，為什麼會註冊時會有刷卡記錄？
+* Q: 註冊 Microsoft Azure 訂用帳戶時要綁信用卡，為什麼會註冊時會有刷卡記錄？  
   A: 這個只是系統在驗證卡片真實性的操作，大概會試刷 1 美金左右（不定）的費用做驗證，但不會實際請款，所以並不會在帳單中出現。
 
-* Q: 綁了信用卡會不會就無故被收費？
+* Q: 綁了信用卡會不會就無故被收費？  
   A: Microsoft Azure 都是根據您的使用情形來計費，若您在測試免費資源，又害不不小心被計費的話，Microsoft Azure 的訂用帳戶預設都會開啟消費限制，所以不用擔心會被計費，但倘若要啟用計費服務時，您必須自行手動移除消費限制才能開始使用。
 
 
