@@ -23,7 +23,7 @@ Azure CLI 是一套跨平台（Windows, Mac, Linux 等）的命令列工具，�
 
 安裝 Azure CLI 你可以：
 
-1. 安裝以 Node.js 寫成，目前的穩定版本，直接透過 npm 安裝即可：`npm -g install azure-cli。（當然你得先安裝 nodejs 及 npm。)`
+1. 安裝以 Node.js 寫成，目前的穩定版本，直接透過 npm 安裝即可：`npm -g install azure-cli`。（當然你得先安裝 nodejs 及 npm。)
 2. 安裝以 Python 寫成的下一代預覽版本，可以透過 pip 安裝：`pip install azure-cli`。（同樣的，你得先裝好 Python 以及 pip）
 
 安裝完成後，檢查看看你能不能執行 `azure` \(穩定版\) 或是 `az` \(下一代\) 的命令。
@@ -42,7 +42,7 @@ Azure CLI 是一套跨平台（Windows, Mac, Linux 等）的命令列工具，�
 
 1. 執行 `azure login`（或是`az login`），指令會產生一個 code 要你登入 [https://aka.ms/devicelogin](https://aka.ms/devicelogin) 後填入，完成身份驗證後，Azure CLI 便會自行下載連結的訂用帳號資料。
 2. 執行 `azure account list` （或是 `az account list`）檢視連結了哪些訂用帳號，並且何者為預設操作的訂用帳號。
-3. （選擇性）執行 `azure account set SUBSCRIPTION`_`ID （或 az account set --subscription SUBSCRIPTION_ID`）來設定預設操作的訂用帳號。
+3. （選擇性）執行 `azure account set SUBSCRIPTION_ID` （或 az account set --subscription SUBSCRIPTION_ID`）來設定預設操作的訂用帳號。
 
 ## 參考資料
 

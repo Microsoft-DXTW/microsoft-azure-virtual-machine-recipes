@@ -1,4 +1,4 @@
-# 取得 Microsoft Azure 訂用帳戶（Subscription）
+[](https://bizspark.microsoft.com/)# 取得 Microsoft Azure 訂用帳戶（Subscription）
 
 在 [Microsoft Azure](https://azure.microsoft.com/zh-tw/) 上建立任何服務及資源時都要指定一個**訂用帳戶**（subscription），用意在於要將該服務或資源的費用累積在哪裡，一個 [Microsoft 帳號](https://www.microsoft.com/zh-tw/account)可以註冊（或是被指派）多個 Microsoft Azure 訂用帳戶，每個訂用帳戶互相獨立，可以有各自的帳單以及付費方式。
 
