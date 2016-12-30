@@ -1,0 +1,11 @@
+{
+  "plugins": ["disqus", "ga"],
+  "pluginsConfig": {
+	"disqus": {
+	  "shortName": "microsoft-azure-vm-recipes"
+	},
+	"ga": {
+	  "token": "UA-43873255-6"
+	}
+  }
+}
