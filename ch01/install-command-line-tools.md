@@ -35,14 +35,14 @@ Azure CLI 是一套跨平台（Windows, Mac, Linux 等）的命令列工具，�
 ### Azure PowerShell
 
 1. 打開 PowerShell，執行 `Login-AzureRmAccount`，這時 PowerShell 會開啟一個認證對話視窗要你登入 Microsoft Azure，登入完成後就會將這個帳戶下關聯的訂用帳戶都連結起來。
-2. 執行 Get-AzureRmSubscription，就會列出所有連結旳訂用帳號。
+2. 執行 `Get-AzureRmSubscription`，就會列出所有連結旳訂用帳號。
 3. 如果您有多個 Microsoft 帳戶，可以再執行 `Add-AzureRmAccount` 切換連結其它訂用帳號。
 
 ### Azure CLI
 
 1. 執行 `azure login`（或是`az login`），指令會產生一個 code 要你登入 [https://aka.ms/devicelogin](https://aka.ms/devicelogin) 後填入，完成身份驗證後，Azure CLI 便會自行下載連結的訂用帳號資料。
 2. 執行 `azure account list` （或是 `az account list`）檢視連結了哪些訂用帳號，並且何者為預設操作的訂用帳號。
-3. （選擇性）執行 `azure account set SUBSCRIPTION_ID` （或 az account set --subscription SUBSCRIPTION_ID`）來設定預設操作的訂用帳號。
+3. （選擇性）執行 `azure account set SUBSCRIPTION_ID` （或 `az account set --subscription SUBSCRIPTION_ID`）來設定預設操作的訂用帳號。
 
 ## 參考資料
 
