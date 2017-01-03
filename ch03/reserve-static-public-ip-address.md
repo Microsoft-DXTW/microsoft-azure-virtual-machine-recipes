@@ -14,6 +14,21 @@ Microsoft Azure 允許你在同一個機房能免費使用 5 個靜態 IP 位址
 
 3. 儲存設定後，下方的 **IP 位址**就是固定的 IP 了。
 
+## 透過命令列工具來操作
+
+* Azure XPlat CLI (0.x)
+
+    ```
+    azure network public-ip set --resource-group AzureVMRecipes --name azurevmrecipes-ip --allocation-method Static
+    ```
+
+* Azure CLI (new)
+
+    ```
+    az network public-ip update --name azurevmrecipes-ip --resource-group AzureVMRecipes --allocation-method Static
+    ```
+
+這個指令會將 _AzureVMRecipes_ 資源群組下，名稱為 _azurevmrecipes-ip_ 的公用 IP 位址資源的 IP 指派方法修改為 _靜態 (Static)_。
 
 ## 造成的影響
 
