@@ -11,6 +11,7 @@
   * [掛載新的磁碟機](/ch03/attach-a-new-disk.md)
   * [連接埠設定](/ch03/port-setting.md)
   * [保留固定（靜態）的公用 IP 位址](/ch03/reserve-static-public-ip-address.md)
+  * [為公用 IP 位址設定一個預設的網域名稱](/ch03/setting-default-domain-name-to-public-ip.md)
 * 高穩定架構以及負載平衡
 * 虛擬網路架構
 * 維運及監控
