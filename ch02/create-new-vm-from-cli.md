@@ -1,6 +1,6 @@
 # 從 Azure 命令列工具建立虛擬機器
 
-_作者: Eric ShangKuan_
+_作者: Eric ShangKuan @ericsk_
 
 除了可以[從 Web 管理界面建立虛擬機器](create-new-vm-from-portal.md)之外，你也可以使用 Azure 命令列工具來建立虛擬機器。
 
@@ -98,14 +98,19 @@ _作者: Eric ShangKuan_
 
 * Azure XPlat CLI (0.x)
 
-    `azure vm create --resource-group MyGroup --name MyVM --location eastasia --os-type Linux --image-urn Canonical:UbuntuServer:16.10-DAILY:16.10.201612140 --nic-name MyVMNIC --vnet-name MyVNet --vnet-address-prefix 10.0.0.0/16 --vnet-subnet-name default --vnet-subnet-address-prefix 10.0.0.0/24 --public-ip-name MyVMPublicIP`
+    ```
+    azure vm create --resource-group MyGroup --name MyVM --location eastasia --os-type Linux --image-urn Canonical:UbuntuServer:16.10-DAILY:16.10.201612140 --nic-name MyVMNIC --vnet-name MyVNet --vnet-address-prefix 10.0.0.0/16 --vnet-subnet-name default --vnet-subnet-address-prefix 10.0.0.0/24 --public-ip-name MyVMPublicIP
+    ```
 
 * Azure CLI (new)
 
-    `az vm create --name MyVM --resource-group MyGroup --image Canonical:UbuntuServer:16.10-DAILY:16.10.201612140 --location eastasia`
+    ```
+    az vm create --name MyVM --resource-group MyGroup --image Canonical:UbuntuServer:16.10-DAILY:16.10.201612140 --location eastasia
+    ```
 
 如此一來便會在_東亞_機房建立一個 _Standard\_DS1_ 大小的虛擬機器，使用的是 _Ubuntu 16.10-DAILY_ 系列的映像檔；而擁有一個公用 IP 位址，以及虛擬網路的環境是 _10.0.0.0/16_ 及其子網路為 _10.0.0.0/24_。
 
-你可以根據自己的需要修改指令中的參數。
+> 你可以根據自己的需要修改指令中的參數。
 
 > 這個例子會以交談式介面詢問您使用者帳號及密碼，而這些當然也可以直接以參數代入，這樣就不會卡在交談式介面中。
+
