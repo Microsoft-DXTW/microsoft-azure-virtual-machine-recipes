@@ -7,6 +7,7 @@
 * 建立及使用虛擬機器
   * [從 Web 管理界面建立虛擬機器](/ch02/create-new-vm-from-portal.md)
   * [從命令列工具建立虛擬機器](/ch02/create-new-vm-from-cli.md)
+  * [使用 ARM 範本部署新虛擬機器](/ch02/create-new-vm-from-arm-template.md)
 * 虛擬機器的系統管理
   * [掛載新的磁碟機](/ch03/attach-a-new-disk.md)
   * [連接埠設定](/ch03/port-setting.md)
