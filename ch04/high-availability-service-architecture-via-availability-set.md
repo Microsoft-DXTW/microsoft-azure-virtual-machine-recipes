@@ -1,6 +1,8 @@
 # 運用可用性集建立高穩定（HA）架構
 
-虛擬機器不是放上雲端平台就可以高枕無憂，因為機房可能會有預期的維護、系統升級、或是不預期的意外等等造成虛擬機器服務中斷或產生問題。Microsoft Azure 提供免費的**可用性集（availability set）**的功能，讓您能透過它建立起高穩定（HA, high availability）的系統架構，降低系統或服務中斷的風險，而透過可集建立的服務架構，Microsoft Azure 承諾 99.95 的服務水準（參考資料 1)。
+_作者：Eric ShangKuan @ericsk_
+
+虛擬機器不是放上雲端平台就可以高枕無憂，因為機房可能會有預期的維護、系統升級、或是不預期的意外等等造成虛擬機器服務中斷或產生問題。Microsoft Azure 提供免費的**可用性集（availability set）**的功能，讓您能透過它建立起高穩定（HA, high availability）的系統架構，降低系統或服務中斷的風險，而透過可集建立的服務架構，Microsoft Azure 承諾 99.95 的服務水準（參考資料 1\)。
 
 > 根據維基百科 [High Availability](https://en.wikipedia.org/wiki/High_availability) 的頁面可以查詢服務水準的定義。99.95 相當於平均一年 52.56 分鐘（或平均一個月 4.38 分鐘）的停機時間，而 Microsoft Azure 承諾若超過這個時間就會補償用戶，詳情請見參考資料。
 
@@ -34,53 +36,53 @@
 
 1. 可用性集可以透過兩種方式建立，第一種就是直接新增資源選**可用性設定組**：
 
-    ![建立可用性設定組](images/azure-creating-as.png)
+   ![建立可用性設定組](images/azure-creating-as.png)
 
-    另一種方式就是在建立虛擬機器時建立可用性集：
+   另一種方式就是在建立虛擬機器時建立可用性集：
 
-    ![建立可用性設定組](images/azure-vm-creating-as.png)
-    
-    建立時除了設定可用性集名稱之外，還可以設定 _更新網域_ 及 _容錯網域_ 的數量，這裡你可以根據需求調整。
+   ![建立可用性設定組](images/azure-vm-creating-as.png)
 
-    > 可用性集不能跨資料中心，所以也要設定這個可用性集的所在位置。
+   建立時除了設定可用性集名稱之外，還可以設定 _更新網域_ 及 _容錯網域_ 的數量，這裡你可以根據需求調整。
+
+   > 可用性集不能跨資料中心，所以也要設定這個可用性集的所在位置。
 
 2. 接下來就可以把虛擬機器放進可用性集中，可用性集會自動分配它的容錯域及更新域的位置。
 
-    ![加入可用性設定組](images/azure-vm-adding-as.png)
+   ![加入可用性設定組](images/azure-vm-adding-as.png)
 
 3. 從可用性設定組可以看到虛擬機器被分配在哪個容錯域及更新域中，這樣就能安排機器互相備援的搭配方法。
 
-    ![](images/azure-as-settings.png)
+   ![](images/azure-as-settings.png)
 
 ### 從命令列工具操作
 
 建立可用性集：
 
-* Azure XPlat CLI (0.x)
+* Azure XPlat CLI \(0.x\)
 
-    ```
-    azure availset create --resource-group AzureVMRecipes --location eastasia --name MyHA
-    ```
+  ```
+  azure availset create --resource-group AzureVMRecipes --location eastasia --name MyHA
+  ```
 
-* Azure CLI (new)
+* Azure CLI \(new\)
 
-    ```
-    az vm availability-set create --resource-group AzureVMRecipes --location eastasia --name MyHA
-    ```
+  ```
+  az vm availability-set create --resource-group AzureVMRecipes --location eastasia --name MyHA
+  ```
 
 在建立虛擬機器時加入可用性集：
 
-* Azure XPlat CLI (0.x)
+* Azure XPlat CLI \(0.x\)
 
-    ```
-    azure vm create ... --availset-name MyHA
-    ```
+  ```
+  azure vm create ... --availset-name MyHA
+  ```
 
-* Azure CLI (new)
+* Azure CLI \(new\)
 
-    ```
-    az vm create ... --availability-set MyHA
-    ```
+  ```
+  az vm create ... --availability-set MyHA
+  ```
 
 > 建立虛擬機器的指令可以參考「[從命令列工具建立虛擬機器](/ch02/create-new-vm-from-cli.md)」一文。
 
