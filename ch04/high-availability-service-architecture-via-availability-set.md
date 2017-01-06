@@ -1,8 +1,8 @@
 # 運用可用性集建立高穩定（HA）架構
 
-虛擬機器不是放上雲端平台就可以高枕無憂，因為機房可能會有預期的維護、系統升級、或是不預期的意外等等造成虛擬機器服務中斷或產生問題。Microsoft Azure 提供免費的**可用性集（availability set）**的功能，讓您能透過它建立起高穩定（HA, high availability）的系統架構，降低系統或服務中斷的風險，而透過可集建立的服務架構，Microsoft Azure 承諾 99.95 的服務水準。
+虛擬機器不是放上雲端平台就可以高枕無憂，因為機房可能會有預期的維護、系統升級、或是不預期的意外等等造成虛擬機器服務中斷或產生問題。Microsoft Azure 提供免費的**可用性集（availability set）**的功能，讓您能透過它建立起高穩定（HA, high availability）的系統架構，降低系統或服務中斷的風險，而透過可集建立的服務架構，Microsoft Azure 承諾 99.95 的服務水準（參考資料 1)。
 
-> 99.95
+> 根據維基百科 High Availability 的頁面可以查詢服務水準的
 
 ## 可用性集的容錯域（Fault Domain）及更新域（Update Domain）
 
@@ -38,8 +38,8 @@
 
 ## 參考資料
 
-* [1]: [Azure 虛擬機器的服務水準 \(SLA\) 保證](https://azure.microsoft.com/support/legal/sla/virtual-machines/)
-* [管理虛擬機器的可用性](https://docs.microsoft.com/zh-tw/azure/virtual-machines/virtual-machines-linux-manage-availability)
+1. [Azure 虛擬機器的服務水準 \(SLA\) 保證](https://azure.microsoft.com/support/legal/sla/virtual-machines/)
+2. [管理虛擬機器的可用性](https://docs.microsoft.com/zh-tw/azure/virtual-machines/virtual-machines-linux-manage-availability)
 
 
 
