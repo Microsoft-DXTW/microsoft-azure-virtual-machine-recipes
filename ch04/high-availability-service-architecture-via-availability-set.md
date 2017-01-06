@@ -14,15 +14,15 @@
 
 舉例來說，假設你有 A, B, C, D, E, F, G 七台虛擬機器，而建了一個有 3 個容錯域、5 個更新域的可用性集把這些虛擬機器放進來，那機器的容錯域及更新域可能會是這樣：
 
-VM | 容錯域 | 更新域
----|---|---
-A | 0 | 0
-B | 1 | 1
-C | 2 | 2
-D | 0 | 3
-E | 1 | 4
-F | 2 | 0
-G | 0 | 1
+| VM | 容錯域 | 更新域 |
+| --- | --- | --- |
+| A | 0 | 0 |
+| B | 1 | 1 |
+| C | 2 | 2 |
+| D | 0 | 3 |
+| E | 1 | 4 |
+| F | 2 | 0 |
+| G | 0 | 1 |
 
 這表示 ABC 分別在不同的機櫃（同理：DEF 也是，但 ADG 是同機櫃）；而 Azure 在升級與維護時一次只會重啟一個更新域，所以當 AF 一起被重啟時，其它 VM 不受影響。
 
@@ -30,13 +30,16 @@ G | 0 | 1
 
 ### 從 Web 管理界面操作
 
-(待寫)
+\(待寫\)
 
 ### 從命令列工具操作
 
-(待寫)
+\(待寫\)
 
 ## 參考資料
 
-* [Azure 虛擬機器的服務水準 (SLA) 保證](https://azure.microsoft.com/support/legal/sla/virtual-machines/)
+* [1]: [Azure 虛擬機器的服務水準 \(SLA\) 保證](https://azure.microsoft.com/support/legal/sla/virtual-machines/)
 * [管理虛擬機器的可用性](https://docs.microsoft.com/zh-tw/azure/virtual-machines/virtual-machines-linux-manage-availability)
+
+
+
