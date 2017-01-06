@@ -26,6 +26,8 @@
 
 這表示 ABC 分別在不同的機櫃（同理：DEF 也是，但 ADG 是同機櫃）；而 Azure 在升級與維護時一次只會重啟一個更新域，所以當 AF 一起被重啟時，其它 VM 不受影響。
 
+> 只有在建立虛擬機器時能設定放在可用性集中，已經建立的 VM 就無法再搬到可用性集中。
+
 ## 建立可用性集
 
 ### 從 Web 管理界面操作
@@ -52,7 +54,35 @@
 
 ### 從命令列工具操作
 
-\(待寫\)
+建立可用性集：
+
+* Azure XPlat CLI (0.x)
+
+    ```
+    azure availset create --resource-group AzureVMRecipes --location eastasia --name MyHA
+    ```
+
+* Azure CLI (new)
+
+    ```
+    az vm availability-set create --resource-group AzureVMRecipes --location eastasia --name MyHA
+    ```
+
+在建立虛擬機器時加入可用性集：
+
+* Azure XPlat CLI (0.x)
+
+    ```
+    azure vm create ... --availset-name MyHA
+    ```
+
+* Azure CLI (new)
+
+    ```
+    az vm create ... --availability-set MyHA
+    ```
+
+> 建立虛擬機器的指令可以參考「[從命令列工具建立虛擬機器](/ch02/create-new-vm-from-cli.md)」一文。
 
 ## 參考資料
 
