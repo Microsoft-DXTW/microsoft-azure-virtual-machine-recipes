@@ -12,16 +12,16 @@ Microsoft Azure 目前是使用 _[資源管理員 (Resource Manager)](https://do
 
 一個基本的 ARM 範本結構如下：
 
-    ```json
-    {
-        "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-        "contentVersion": "",
-        "parameters": {  },
-        "variables": {  },
-        "resources": [  ],
-        "outputs": {  }
-    }
-    ```
+```json
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "",
+    "parameters": {  },
+    "variables": {  },
+    "resources": [  ],
+    "outputs": {  }
+}
+```
 
 定義分別如下：
 
@@ -429,7 +429,7 @@ Microsoft Azure 目前是使用 _[資源管理員 (Resource Manager)](https://do
     azure group deployment template download -g AzureVMRecipes -n MyDeployment
     ```
 
-    成功執行後會下載名為 `<部署名稱>.json` 的範本檔案。
+    成功執行後會下載名為 _<部署名稱>.json（如 MyDeployment.json）_ 的範本檔案。
 
 * Azure CLI (new)
 
