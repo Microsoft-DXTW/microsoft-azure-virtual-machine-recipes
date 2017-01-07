@@ -4,7 +4,7 @@ _作者：Eric ShangKuan @ericsk_
 
 虛擬機器不是放上雲端平台就可以高枕無憂，因為機房可能會有預期的維護、系統升級、或是不預期的意外等等造成虛擬機器服務中斷或產生問題。Microsoft Azure 提供免費的**可用性集（availability set）**的功能，讓您能透過它建立起高穩定（HA, high availability）的系統架構，降低系統或服務中斷的風險，而透過可集建立的服務架構，Microsoft Azure 承諾 99.95 的服務水準（參考資料 1\)。
 
-> 根據維基百科 [High Availability](https://en.wikipedia.org/wiki/High_availability) 的頁面可以查詢服務水準的定義。99.95 相當於平均一年 52.56 分鐘（或平均一個月 4.38 分鐘）的停機時間，而 Microsoft Azure 承諾若超過這個時間就會補償用戶，詳情請見參考資料。
+> 根據維基百科 [High Availability](https://en.wikipedia.org/wiki/High_availability) 的頁面可以查詢服務水準的定義。99.95 相當於平均一年 52.56 分鐘（或平均一個月 4.38 分鐘）的停機時間，目前微軟公司以月為單位來衡量高穩定性服務水準，若 Microsoft Azure 每月停機超過這個時間就會補償用戶，詳情請見參考資料。
 
 ## 可用性集的容錯域（Fault Domain）及更新域（Update Domain）
 
