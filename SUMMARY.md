@@ -15,6 +15,7 @@
   * [為公用 IP 位址設定一個預設的網域名稱](/ch03/setting-default-domain-name-to-public-ip.md)
 * 高穩定架構以及負載平衡
   * [運用可用性集建立高穩定（HA）架構](/ch04/high-availability-service-architecture-via-availability-set.md)
+  * [使用負載平衡器分散流量到不同的虛擬機器](/ch04/dispatch-requests-to-multiple-vms.md)
 * 虛擬網路架構
 * 維運及監控
 * 架構參考
