@@ -17,6 +17,7 @@
   * [運用可用性集建立高穩定（HA）架構](/ch04/high-availability-service-architecture-via-availability-set.md)
   * [使用負載平衡器分散流量到不同的虛擬機器](/ch04/dispatch-requests-to-multiple-vms.md)
 * 虛擬網路架構
+  * [建立虛擬網路對等互連 (VNet peering)](/ch05/vnet-peering.md)
 * 維運及監控
 * 架構參考
 
